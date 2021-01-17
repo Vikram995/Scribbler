@@ -1,0 +1,60 @@
+body {
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+
+#main-header {
+    color: blue;
+    font-family: 'Montez', cursive; 
+    font-size: 40px;
+}
+
+#sub-heading{
+font-family: 'Ubuntu Mono';
+font-size: 15px;
+margin:0px;
+padding:0px;
+
+}
+
+#buttons-group{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+#sign-up-button{
+    padding:0.5% 2%;
+    margin:10px 0px 0px 20px;
+    text-align: center;
+    background-color: blue;
+    border: 0;
+}
+#sign-in-button{
+    padding:0.5% 2%;
+    margin:10px 20px 0px 20px;
+    text-align: center;
+    background-color: blue;
+    border: 0;
+}
+
+#all-posts-button {
+    background-color:yellow;
+    color: black;
+    border: 0;
+        
+}
+
+#create-post-button {
+    background-color:yellow;
+    color: black;
+    border: 0;
+}
+
+
