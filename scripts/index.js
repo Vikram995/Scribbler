@@ -9,7 +9,7 @@ var createPost_close = document.getElementsByClassName("close")[2];
 
 //Navigate to new page
 allPosts_button.onclick = function () {
-    location.href = "./html/bloglist.html";
+    location.href = "./html/postslist.html";
 };
 
 // When the user clicks on the button, open the modal

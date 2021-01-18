@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- TODO: Include Google Fonts file here -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montez&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/common.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/postslist.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body id = "post-body">
+    <!-- TODO: Include code for header here -->
+    <header> 
+        <span id ="main-header">
+            ScriBBler        
+        </span>
+        <span>
+            <button id="sign-in-button" type="button" class="btn btn-primary float-right" >Sign In</button>  
+            <button id="sign-up-button" type="button" class="btn btn-primary float-right" >Sign Up</button>            
+        </span>           
+        <h2 id="sub-heading">
+            Explore, Imagine, Create
+        </h2>
+    </header>
+
+    <!-- The Modal -->
+    <div id="SignUpModal" class="modal">
+        <!-- Modal content -->
+       <div class="modal-content">            
+           <h5 style="margin-right: 65%;">Get Started</h5>   
+           <span class="close">&times;</span>  
+           <form>                       
+               <label class="break" >Name</label>
+               <input type="text" placeholder="Enter your name" class="break" id="Name" required>
+               <label class="break">Username</label>
+               <input type="text" placeholder="Enter your username" class="break" id="Username" required>
+               <label id="password" class="break">Password</label>
+               <input type="password" placeholder="Enter your password" class="break" id="password" required>
+               <label id="confirm-password" class="break">Confirm Password</label>
+               <input type="password" placeholder="Re-enter your password" id="confirm-password" class="break" required>             
+               <button type="submit" class="btn btn-success" id ="success-button-signup">Sign Up</button>
+            </form>
+       </div>
+   </div>
+
+   <div id="SignInModal" class="modal">
+       <!-- Modal content -->
+      <div class="modal-content">            
+          <h5 style="margin-right: 55%;">Welcome Back</h5>   
+          <span class="close">&times;</span>  
+          <form>                       
+              <label class="break">Username</label>
+              <input type="text" placeholder="Enter your username" class="break" id="Username1" required>
+              <label id="password1" class="break">Password</label>
+              <input type="password" placeholder="Enter your password" class="break" id="password1" required>
+              <button type="submit" class="btn btn-success" id ="success-button-signin">Sign In</button>
+           </form>
+           <p id="sign-up-link">Not a member? <a href="#" id="sign-up-link">Sign Up</a> </p>
+      </div>
+  </div>
+  <br/>
+
+  <p>
+    Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.
+  </p>
+
+  <script src="../scripts/common.js"></script>
+
+</body>
+
+</html>
