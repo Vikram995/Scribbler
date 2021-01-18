@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montez&family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/common.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
@@ -22,8 +23,8 @@
             ScriBBler        
         </span>
         <span>
-            <button id="sign-in-button" type="button" class="btn btn-primary float-right">Sign In</button>  
-            <button id="sign-up-button" type="button" class="btn btn-primary float-right">Sign Up</button>            
+            <button id="sign-in-button" type="button" class="btn btn-primary float-right" >Sign In</button>  
+            <button id="sign-up-button" type="button" class="btn btn-primary float-right" >Sign Up</button>            
         </span>           
         <h2 id="sub-heading">
             Explore, Imagine, Create
@@ -34,12 +35,61 @@
             <button id="all-posts-button" type="button" class="btn btn-primary float-center">All Posts</button>   
             <button id="create-post-button" type="button" class="btn btn-primary float-center">Create Post</button>   
         </span>
-        
+   </div>
 
+   <!-- The Modal -->
+    <div id="SignUpModal" class="modal">
+         <!-- Modal content -->
+        <div class="modal-content">            
+            <h5 style="margin-right: 65%;">Get Started</h5>   
+            <span class="close">&times;</span>  
+            <form>                       
+                <label class="break" >Name</label>
+                <input type="text" placeholder="Enter your name" class="break" id="Name" required>
+                <label class="break">Username</label>
+                <input type="text" placeholder="Enter your username" class="break" id="Username" required>
+                <label id="password" class="break">Password</label>
+                <input type="password" placeholder="Enter your password" class="break" id="password" required>
+                <label id="confirm-password" class="break">Confirm Password</label>
+                <input type="password" placeholder="Re-enter your password" id="confirm-password" class="break" required>             
+                <button type="submit" class="btn btn-success" id ="success-button-signup">Sign Up</button>
+             </form>
+        </div>
+    </div>
 
+    <div id="SignInModal" class="modal">
+        <!-- Modal content -->
+       <div class="modal-content">            
+           <h5 style="margin-right: 55%;">Welcome Back</h5>   
+           <span class="close">&times;</span>  
+           <form>                       
+               <label class="break">Username</label>
+               <input type="text" placeholder="Enter your username" class="break" id="Username1" required>
+               <label id="password1" class="break">Password</label>
+               <input type="password" placeholder="Enter your password" class="break" id="password1" required>
+               <button type="submit" class="btn btn-success" id ="success-button-signin">Sign In</button>
+            </form>
+            <p id="sign-up-link">Not a member? <a href="#" id="sign-up-link">Sign Up</a> </p>
+       </div>
+   </div>
+
+   <div id="CreatePostModal" class="modal">
+    <!-- Modal content -->
+        <div class="modal-content">            
+            <h5 style="margin-right: 65%;">Pen Your Post</h5>   
+            <span class="close">&times;</span>  
+            <form>                       
+                <label class="break">Title</label>
+                <input type="text" class="break" placeholder="Enter title of your post" id="postTitle" required>
+                <label id="contents" class="break" >Contents</label>
+                <textarea placeholder="Enter the contents of your post" rows="10" cols="80" class="break" required></textarea>
+                <button type="submit" class="btn btn-success" id ="success-button-createPost">Create</button>
+            </form>
+        </div>
     </div>
      
-    
+    <script src="./scripts/common.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>

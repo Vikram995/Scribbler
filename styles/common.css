@@ -10,6 +10,7 @@ body {
     color: blue;
     font-family: 'Montez', cursive; 
     font-size: 40px;
+    margin-left: 1%;
 }
 
 #sub-heading{
@@ -17,8 +18,11 @@ font-family: 'Ubuntu Mono';
 font-size: 15px;
 margin:0px;
 padding:0px;
+margin-left: 1%;
 
 }
+
+
 
 #buttons-group{
 
@@ -44,17 +48,6 @@ padding:0px;
     border: 0;
 }
 
-#all-posts-button {
-    background-color:yellow;
-    color: black;
-    border: 0;
-        
-}
 
-#create-post-button {
-    background-color:yellow;
-    color: black;
-    border: 0;
-}
 
 
